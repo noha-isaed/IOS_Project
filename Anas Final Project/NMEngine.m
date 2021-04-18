@@ -33,11 +33,13 @@
     NSInteger capacity = 0;
     NSInteger cylinders = 0;
     
-    return [self initWithManufacture:(NSString*)manufacture
-                     manufactureDate:(NSDate *)manufactureDate
-                               model:(NSString *)model
-                            capacity:(NSInteger)capacity
-                                cylinders:(NSInteger)cylinders];
+    return [self initWithManufacture:manufacture
+                     manufactureDate:manufactureDate
+                               model:model
+                            capacity:capacity
+                                cylinders:cylinders];
 }
+
+@synthesize manufacture, manufactureDate, model, capacity, cylinders;
 
 @end

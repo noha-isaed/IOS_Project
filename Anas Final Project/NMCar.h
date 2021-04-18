@@ -15,7 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger chairNumber;
 @property (nonatomic, assign) BOOL isFurnitreLeather;
 
-- (instancetype)initWithChairNumber:(NSInteger)chairNumber isFurnitreLeather:(BOOL)isFurnitreLeather;
+- (instancetype)initWithChairNumber:(NSInteger)chairNumber
+                  isFurnitreLeather:(BOOL)isFurnitreLeather
+                              width:(double)width
+                             length:(double)length
+                              color:(UIColor*)color
+                        manufactureCompany:(NSString*)manufactureCompany
+                           manufactureDate:(NSDate *)manufactureDate
+                                     model:(NSString *)model
+                                    engine:(NMEngine *)engine
+                               plateNumber:(NSInteger)plateNumber
+                   bodySerialNumber:(NSInteger)bodySerialNumber;
 
 @end
 

@@ -18,7 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) double length;
 @property (nonatomic, retain) UIColor *color;
 
-- (instancetype)initWithWidth:(double)width length:(double)lenght color:(UIColor*)color;
+- (instancetype)initWithWidth:(double)width
+                       length:(double)length
+                        color:(UIColor*)color
+                  manufactureCompany:(NSString*)manufactureCompany
+                     manufactureDate:(NSDate *)manufactureDate
+                               model:(NSString *)model
+                              engine:(NMEngine *)engine
+                         plateNumber:(NSInteger)plateNumber
+                    bodySerialNumber:(NSInteger)bodySerialNumber;
 
 
 @end

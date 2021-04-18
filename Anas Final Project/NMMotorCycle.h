@@ -17,7 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) double tierDiameter;
 @property (nonatomic, assign) double length;
 
-- (instancetype)initWithTierDiameter:(double)tierDiameter length:(double) length manufactureCompany:(NSString*)manufactureCompany
+- (instancetype)initWithTierDiameter:(double)tierDiameter
+                              length:(double) length
+                  manufactureCompany:(NSString*)manufactureCompany
                      manufactureDate:(NSDate *)manufactureDate
                                model:(NSString *)model
                               engine:(NMEngine *)engine

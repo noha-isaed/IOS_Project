@@ -29,18 +29,23 @@
 }
 
 - (instancetype) init{
+    NMEngine *defaultEngine = [[NMEngine alloc] init];
+    
     NSString *manufactureCompany = @"Tesla" ;
     NSDate *manufactureDate = nil;
     NSString *model = @"Tesla Model S";
-    NMEngine *engine = nil;
+    NMEngine *engine = defaultEngine;
     NSInteger plateNumber = 123;
     NSInteger bodySerialNumber = 1;
     
-    return [self initWithManufactureCompany:(NSString *)manufactureCompany
-                            manufactureDate:(NSDate *)manufactureDate
-                                      model:(NSString *)model
-                                     engine:(NMEngine *)engine
-                                plateNumber:(NSInteger)plateNumber
-                           bodySerialNumber:(NSInteger)bodySerialNumber];
+    return [self initWithManufactureCompany:manufactureCompany
+                            manufactureDate:manufactureDate
+                                      model:model
+                                     engine:engine
+                                plateNumber:plateNumber
+                           bodySerialNumber:bodySerialNumber];
 }
+
+@synthesize manufactureCompany, manufactureDate, model, engine, plateNumber, bodySerialNumber;
+
 @end
