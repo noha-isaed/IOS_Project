@@ -9,13 +9,14 @@
 
 @implementation NMAutomobile
 
+
 - (instancetype)initWithManufactureCompany:(NSString *)manufactureCompany
                  manufactureDate:(NSDate *)manufactureDate
                            model:(NSString *)model
                           engine:(NMEngine *)engine
                      plateNumber:(NSInteger)plateNumber
                 bodySerialNumber:(NSInteger)bodySerialNumber {
-    self = [super init] ;
+    self = [super init];
     
     if(self) {
         [self setManufactureCompany: manufactureCompany];
@@ -28,7 +29,8 @@
     return self;
 }
 
-- (instancetype) init{
+- (instancetype) init {
+    
     NMEngine *defaultEngine = [[NMEngine alloc] init];
     
     NSString *manufactureCompany = @"Tesla" ;
@@ -46,6 +48,5 @@
                            bodySerialNumber:bodySerialNumber];
 }
 
-@synthesize manufactureCompany, manufactureDate, model, engine, plateNumber, bodySerialNumber;
 
 @end

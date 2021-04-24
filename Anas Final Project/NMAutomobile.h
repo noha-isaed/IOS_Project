@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
                      plateNumber:(NSInteger)plateNumber
                 bodySerialNumber:(NSInteger)bodySerialNumber;
 
+
+
 @end
 
 NS_ASSUME_NONNULL_END

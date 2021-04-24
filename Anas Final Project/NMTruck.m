@@ -77,15 +77,20 @@
                          plateNumber:(NSInteger)plateNumber
                     bodySerialNumber:(NSInteger)bodySerialNumber {
     
-    return [self initWithWidth:width
-                        length:length
-                         color:color
-                   manufactureCompany:manufactureCompany
-                      manufactureDate:manufactureDate
-                                model:model
-                               engine:engine
-                          plateNumber:plateNumber
-                     bodySerialNumber:bodySerialNumber
+    double freeWeight = 400;
+    double fullWeight = 800;
+    
+    return [self  initWithFreeWeight:freeWeight
+                           fullWight:fullWeight
+                       initWithWidth:width
+                              length:length
+                               color:color
+                         manufactureCompany:manufactureCompany
+                            manufactureDate:manufactureDate
+                                      model:model
+                                     engine:engine
+                                plateNumber:plateNumber
+                    bodySerialNumber:bodySerialNumber
 ];
     
 }

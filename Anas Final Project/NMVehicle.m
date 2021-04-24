@@ -63,7 +63,14 @@
                      plateNumber:(NSInteger)plateNumber
                 bodySerialNumber:(NSInteger)bodySerialNumber {
     
-    return [self initWithManufactureCompany:manufactureCompany
+    double width = 0.0;
+    double length = 0.0;
+    UIColor *color = nil;
+    
+    return [self initWithWidth:width
+                        length:length
+                         color:color
+                   manufactureCompany:manufactureCompany
                       manufactureDate:manufactureDate
                                 model:model
                                engine:engine

@@ -59,7 +59,12 @@
                      plateNumber:(NSInteger)plateNumber
                 bodySerialNumber:(NSInteger)bodySerialNumber {
     
-    return [self initWithManufactureCompany:manufactureCompany
+    double tierDiameter = 0.0;
+    double length = 0.0;
+    
+    return [self initWithTierDiameter:tierDiameter
+                               length:length
+                   manufactureCompany:manufactureCompany
                       manufactureDate:manufactureDate
                                 model:model
                                engine:engine

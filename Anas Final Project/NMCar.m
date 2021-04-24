@@ -76,15 +76,20 @@
                          plateNumber:(NSInteger)plateNumber
                     bodySerialNumber:(NSInteger)bodySerialNumber {
     
-    return [self initWithWidth:width
-                        length:length
-                         color:color
-                   manufactureCompany:manufactureCompany
-                      manufactureDate:manufactureDate
-                                model:model
-                               engine:engine
-                          plateNumber:plateNumber
-                     bodySerialNumber:bodySerialNumber
+    NSInteger chairNumber = 4;
+    BOOL isFurnitreLeather = NO;
+    
+    return [self initWithChairNumber:chairNumber
+                   isFurnitreLeather:isFurnitreLeather
+                               width:width
+                              length:length
+                               color:color
+                         manufactureCompany:manufactureCompany
+                            manufactureDate:manufactureDate
+                                      model:model
+                                     engine:engine
+                                plateNumber:plateNumber
+                    bodySerialNumber:bodySerialNumber
 ];
     
 }
