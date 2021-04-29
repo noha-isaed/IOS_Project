@@ -46,7 +46,7 @@
     NSString *manufactureCompany = @"Tesla" ;
     NSDate *manufactureDate = nil;
     NSString *model = @"Tesla Model S";
-    NMEngine *engine = [[NMEngine alloc]init];
+    NMEngine *engine = nil ;//[[NMEngine alloc]init];
     NSInteger plateNumber = 123;
     NSInteger bodySerialNumber = 1;
     NSInteger chairNumber = 4;

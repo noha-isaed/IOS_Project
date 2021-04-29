@@ -11,7 +11,7 @@
 
 - (instancetype)initWithFreeWeight:(double)freeWeight
                          fullWight:(double)fullWeight
-                     initWithWidth:(double)width
+                             width:(double)width
                             length:(double)length
                              color:(UIColor*)color
                        manufactureCompany:(NSString*)manufactureCompany
@@ -55,7 +55,7 @@
     
     return [self initWithFreeWeight:freeWeight
                           fullWight:fullWeight
-                      initWithWidth:width
+                              width:width
                              length:length
                               color:color
                         manufactureCompany:manufactureCompany
@@ -82,7 +82,7 @@
     
     return [self  initWithFreeWeight:freeWeight
                            fullWight:fullWeight
-                       initWithWidth:width
+                               width:width
                               length:length
                                color:color
                          manufactureCompany:manufactureCompany

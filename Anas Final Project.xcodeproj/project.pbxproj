@@ -13,7 +13,6 @@
 		AF281D2B26316FAB0003CE40 /* NMAotumobileDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF281D2A26316FAB0003CE40 /* NMAotumobileDetailsViewController.m */; };
 		AF3EADF1262AD3F90011D505 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EADF0262AD3F90011D505 /* AppDelegate.m */; };
 		AF3EADF4262AD3F90011D505 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EADF3262AD3F90011D505 /* SceneDelegate.m */; };
-		AF3EADFC262AD4090011D505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3EADFB262AD4090011D505 /* Assets.xcassets */; };
 		AF3EADFF262AD4090011D505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3EADFD262AD4090011D505 /* LaunchScreen.storyboard */; };
 		AF3EAE02262AD4090011D505 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE01262AD4090011D505 /* main.m */; };
 		AF3EAE0C262AD40C0011D505 /* Anas_Final_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE0B262AD40C0011D505 /* Anas_Final_ProjectTests.m */; };
@@ -25,6 +24,7 @@
 		AF3EAE5F262AE2A60011D505 /* NMVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE5E262AE2A60011D505 /* NMVehicle.m */; };
 		AF3EAE65262AE3DD0011D505 /* NMTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE64262AE3DD0011D505 /* NMTruck.m */; };
 		AFA0608526341BF200B7E239 /* AutomobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA0608426341BF200B7E239 /* AutomobileViewController.m */; };
+		AFB03077263AAD080028AB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB03076263AAD080028AB34 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 		AF3EADF0262AD3F90011D505 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF3EADF2262AD3F90011D505 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		AF3EADF3262AD3F90011D505 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AF3EADFB262AD4090011D505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF3EADFE262AD4090011D505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF3EAE00262AD4090011D505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3EAE01262AD4090011D505 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		AF3EAE64262AE3DD0011D505 /* NMTruck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMTruck.m; sourceTree = "<group>"; };
 		AFA0608326341BF200B7E239 /* AutomobileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutomobileViewController.h; sourceTree = "<group>"; };
 		AFA0608426341BF200B7E239 /* AutomobileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomobileViewController.m; sourceTree = "<group>"; };
+		AFB03076263AAD080028AB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Calculater/Calculater/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +147,8 @@
 				AF3EADF0262AD3F90011D505 /* AppDelegate.m */,
 				AF3EADF2262AD3F90011D505 /* SceneDelegate.h */,
 				AF3EADF3262AD3F90011D505 /* SceneDelegate.m */,
-				AF3EADFB262AD4090011D505 /* Assets.xcassets */,
 				AF3EADFD262AD4090011D505 /* LaunchScreen.storyboard */,
+				AFB03076263AAD080028AB34 /* Assets.xcassets */,
 				AF3EAE00262AD4090011D505 /* Info.plist */,
 				AF3EAE01262AD4090011D505 /* main.m */,
 				AF3EAE5D262AE2A60011D505 /* NMVehicle.h */,
@@ -289,8 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF281D1926315CAB0003CE40 /* Main.storyboard in Resources */,
+				AFB03077263AAD080028AB34 /* Assets.xcassets in Resources */,
 				AF3EADFF262AD4090011D505 /* LaunchScreen.storyboard in Resources */,
-				AF3EADFC262AD4090011D505 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,19 +13,24 @@
 
 @implementation NMAutomobileImageViewController
 
+@synthesize currentAutomobile;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.automobileImageView setImage:[UIImage imageNamed: [currentAutomobile manufactureCompany]]];
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NMAotumobileDetailsViewController *autoMobileDetails = [segue destinationViewController];
+    [autoMobileDetails setCurrentAutomobile:self.currentAutomobile];
 }
-*/
+
 
 @end

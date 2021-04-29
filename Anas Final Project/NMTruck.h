@@ -16,7 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) double freeWeight ;
 @property (assign, nonatomic) double fullWeight ;
 
-- (instancetype)initWithFreeWeight:(double)freeWeight fullWight:(double)fullWeight;
+- (instancetype)initWithFreeWeight:(double)freeWeight
+                         fullWight:(double)fullWeight
+                             width:(double)width
+                            length:(double)length
+                             color:(UIColor*)color
+                       manufactureCompany:(NSString*)manufactureCompany
+                          manufactureDate:(NSDate *)manufactureDate
+                                    model:(NSString *)model
+                                   engine:(NMEngine *)engine
+                              plateNumber:(NSInteger)plateNumber
+                  bodySerialNumber:(NSInteger)bodySerialNumber;
 
 @end
 

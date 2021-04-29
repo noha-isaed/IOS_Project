@@ -20,26 +20,26 @@ NSMutableArray *autoMobiles;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    autoMobiles = [NSMutableArray arrayWithObjects:@"Car" , "Truck" , "Motorcycle", nil];
     
+//    [self.autoMobileDetailsLabel setText:self.currentAutomobile.];
 
 }
 
 
-#pragma mark - Navigation
-
-- (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section{
-    return autoMobiles.count;
-}
-
-- (UITableViewCell *) tableView: (UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    cell.textLabel.text = autoMobiles[indexPath.row];
-    
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return  cell;
-}
+//#pragma mark - Navigation
+//
+//- (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section{
+//    return autoMobiles.count;
+//}
+//
+//- (UITableViewCell *) tableView: (UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+//
+//    cell.textLabel.text = autoMobiles[indexPath.row];
+//
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    return  cell;
+//}
 /*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
