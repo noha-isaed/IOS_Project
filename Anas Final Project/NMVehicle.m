@@ -10,7 +10,7 @@
 @implementation NMVehicle
 
 - (instancetype)initWithWidth:(double)width
-                       length:(double)lenght
+                       vehicleLength:(double)lenght
                         color:(UIColor*)color
                   manufactureCompany:(NSString*)manufactureCompany
                      manufactureDate:(NSDate *)manufactureDate
@@ -26,8 +26,8 @@
                                  plateNumber:plateNumber
                             bodySerialNumber:bodySerialNumber];
     if(self){
-        [self setWidth:width];
-        [self setLength:lenght];
+        [self setVehicleWidth:width];
+        [self setVehicleLength:lenght];
         [self setColor:color];
     }
     return self;
@@ -45,7 +45,7 @@
     NSInteger bodySerialNumber = 1;
     
     return [self initWithWidth:width
-                        length:length
+                        vehicleLength:length
                          color:color
                    manufactureCompany:manufactureCompany
                       manufactureDate:manufactureDate
@@ -68,7 +68,7 @@
     UIColor *color = nil;
     
     return [self initWithWidth:width
-                        length:length
+                 vehicleLength:length
                          color:color
                    manufactureCompany:manufactureCompany
                       manufactureDate:manufactureDate
@@ -82,5 +82,5 @@
 
 
 
-@synthesize width, length, color;
+@synthesize vehicleWidth, vehicleLength, color;
 @end

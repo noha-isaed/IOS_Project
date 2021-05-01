@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NMCar *car = [[NMCar alloc] initWithChairNumber:3 isFurnitreLeather:YES width:3.0 length:5.5 color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1] manufactureCompany:@"Tesla" manufactureDate:[NSDate date] model:@"Model S" engine:[NMEngine init] plateNumber:123456789 bodySerialNumber:999];
+    NMCar *car = [[NMCar alloc] initWithChairNumber:3 isFurnitreLeather:YES vehicleWidth:3.0 vehicleLength:5.5 color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1] manufactureCompany:@"Tesla" manufactureDate:[NSDate date] model:@"Model S" engine:[NMEngine init] plateNumber:123456789 bodySerialNumber:999];
       
 }
 

@@ -27,19 +27,19 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NMCar *car = [[NMCar alloc] initWithChairNumber:3 isFurnitreLeather:YES width:3.0 length:5.5 color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1] manufactureCompany:@"Tesla" manufactureDate:[NSDate date] model:@"Model S" engine:[[NMEngine alloc] init] plateNumber:4435 bodySerialNumber:999];
+    NMCar *car = [[NMCar alloc] initWithChairNumber:3 isFurnitreLeather:YES vehicleWidth:3.0 vehicleLength:5.5 color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1] manufactureCompany:@"Tesla" manufactureDate:[NSDate date] model:@"Model S" engine:[[NMEngine alloc] init] plateNumber:4435 bodySerialNumber:999];
       
     [autoMobile addObject:car];
 
-    car = [[NMCar alloc] initWithChairNumber:3 isFurnitreLeather:YES width:5.0 length:6.5 color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1] manufactureCompany:@"BMW" manufactureDate:[NSDate date] model:@"Model S" engine:[[NMEngine alloc] init] plateNumber:6547 bodySerialNumber:555];
+    car = [[NMCar alloc] initWithChairNumber:3 isFurnitreLeather:YES vehicleWidth:5.0 vehicleLength:6.5 color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1] manufactureCompany:@"BMW" manufactureDate:[NSDate date] model:@"Model S" engine:[[NMEngine alloc] init] plateNumber:6547 bodySerialNumber:555];
     
     [autoMobile addObject:car];
 
    
     NMTruck *truck = [[NMTruck alloc]initWithFreeWeight:150
                                               fullWight:300
-                                                  width:160
-                                                 length:400
+                                           vehicleWidth:160
+                                          vehicleLength:400
                                                   color:[UIColor colorWithRed:0.2 green:0.3 blue:0.4 alpha:1]
                                             manufactureCompany:@"Volvo"
                                                manufactureDate:[NSDate new]
@@ -51,15 +51,14 @@
     [autoMobile addObject:truck];
     
     NMMotorCycle *motorcycle = [[NMMotorCycle alloc] initWithTierDiameter:17
-                                                                  length:130
-                                                      manufactureCompany:@"KTM"
-                                                         manufactureDate:[NSDate new]
-                                                                   model:@"323"
-                                                                  engine:[NMEngine new]
-                                                             plateNumber:3322
+                                                         motorCycleLength:130
+                                                       manufactureCompany:@"KTM"
+                                                          manufactureDate:[NSDate new]
+                                                           model:@"323"
+                                                           engine:[NMEngine new]
+                                                              plateNumber:3322
                                                          bodySerialNumber:45678932323];
-    
-  
+                      
 
     
     [autoMobile addObject:motorcycle];
@@ -106,9 +105,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NMAutomobileImageViewController *autoMobileImage = [segue destinationViewController];
+    NMAotumobileDetailsViewController *autoMobileDetails = [segue destinationViewController];
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    [autoMobileImage setCurrentAutomobile:[autoMobile objectAtIndex:selectedIndexPath.row]];
+    [autoMobileDetails setCurrentAutomobile:[autoMobile objectAtIndex:selectedIndexPath.row]];
 }
 
 /*

@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NMCar.h"
-#import "NMAutomobileImageViewController.h"
+#import "NMAotumobileDetailsViewController.h"
 #import "NMAutomobile.h"
 NS_ASSUME_NONNULL_BEGIN
 

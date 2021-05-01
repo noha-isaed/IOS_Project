@@ -8,43 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Automobile Image View Controller-->
-        <scene sceneID="fZ7-Qh-U2C">
-            <objects>
-                <viewController id="zTu-I3-CsI" customClass="NMAutomobileImageViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hPJ-Qs-5BC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VWq-Dm-mXe">
-                                <rect key="frame" x="0.0" y="116" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="PHc-lW-7Gj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="UKf-Sn-yeo">
-                        <barButtonItem key="rightBarButtonItem" title="Details" id="Mz8-Jl-vHp">
-                            <connections>
-                                <segue destination="mIj-Uc-HKI" kind="presentation" id="4DE-FS-Phn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="automobileImageView" destination="VWq-Dm-mXe" id="p2g-E2-YsL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VHE-h6-CRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5224.6376811594209" y="199.55357142857142"/>
-        </scene>
         <!--Aotumobile Details View Controller-->
         <scene sceneID="RIt-NG-OZU">
             <objects>
                 <viewController id="mIj-Uc-HKI" customClass="NMAotumobileDetailsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bkC-F7-Szc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-KS-BAQ">
@@ -53,7 +22,7 @@
                                 <state key="normal" title="Button" image="xmark" catalog="system"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabelLabelLabelLabelLabel LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-eq-bhG">
-                                <rect key="frame" x="20" y="82" width="496" height="41"/>
+                                <rect key="frame" x="10" y="197" width="496" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -70,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2L-RW-du7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6223" y="200"/>
+            <point key="canvasLocation" x="5283" y="208"/>
         </scene>
         <!--Automobile Table View Controller-->
         <scene sceneID="9P6-3y-VPY">
@@ -105,7 +74,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="zTu-I3-CsI" kind="show" id="rkQ-pO-mQs"/>
+                                    <segue destination="mIj-Uc-HKI" kind="show" id="mO5-Ny-Dcc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

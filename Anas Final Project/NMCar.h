@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithChairNumber:(NSInteger)chairNumber
                   isFurnitreLeather:(BOOL)isFurnitreLeather
-                              width:(double)width
-                             length:(double)length
+                           vehicleWidth:(double)width
+                             vehicleLength:(double)length
                               color:(UIColor*)color
-                        manufactureCompany:(NSString*)manufactureCompany
-                           manufactureDate:(NSDate *)manufactureDate
-                                     model:(NSString *)model
-                                    engine:(NMEngine *)engine
-                               plateNumber:(NSInteger)plateNumber
+                 manufactureCompany:(NSString*)manufactureCompany
+                    manufactureDate:(NSDate *)manufactureDate
+                              model:(NSString *)model
+                             engine:(NMEngine *)engine
+                        plateNumber:(NSInteger)plateNumber
                    bodySerialNumber:(NSInteger)bodySerialNumber;
 
 @end

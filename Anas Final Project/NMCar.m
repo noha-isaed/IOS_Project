@@ -11,8 +11,8 @@
 
 - (instancetype)initWithChairNumber:(NSInteger)chairNumber
                   isFurnitreLeather:(BOOL)isFurnitreLeather
-                              width:(double)width
-                             length:(double)length
+                              vehicleWidth:(double)width
+                             vehicleLength:(double)length
                               color:(UIColor*)color
                         manufactureCompany:(NSString*)manufactureCompany
                            manufactureDate:(NSDate *)manufactureDate
@@ -22,7 +22,7 @@
                    bodySerialNumber:(NSInteger)bodySerialNumber{
     
     self = [super initWithWidth:width
-                         length:length
+                  vehicleLength:length
                           color:color
                     manufactureCompany:manufactureCompany
                        manufactureDate:manufactureDate
@@ -54,8 +54,8 @@
     
     return [self initWithChairNumber:chairNumber
                    isFurnitreLeather:isFurnitreLeather
-                               width:width
-                              length:length
+                               vehicleWidth:width
+                              vehicleLength:length
                                color:color
                          manufactureCompany:manufactureCompany
                             manufactureDate:manufactureDate
@@ -67,7 +67,7 @@
 }
 
 - (instancetype)initWithWidth:(double)width
-                       length:(double)length
+                vehicleLength:(double)length
                         color:(UIColor*)color
                   manufactureCompany:(NSString*)manufactureCompany
                      manufactureDate:(NSDate *)manufactureDate
@@ -81,8 +81,8 @@
     
     return [self initWithChairNumber:chairNumber
                    isFurnitreLeather:isFurnitreLeather
-                               width:width
-                              length:length
+                               vehicleWidth:width
+                              vehicleLength:length
                                color:color
                          manufactureCompany:manufactureCompany
                             manufactureDate:manufactureDate

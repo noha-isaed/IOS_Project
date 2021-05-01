@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFreeWeight:(double)freeWeight
                          fullWight:(double)fullWeight
-                             width:(double)width
-                            length:(double)length
+                      vehicleWidth:(double)width
+                        vehicleLength:(double)length
                              color:(UIColor*)color
                        manufactureCompany:(NSString*)manufactureCompany
                           manufactureDate:(NSDate *)manufactureDate

@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 @property (nonatomic, assign) double tierDiameter;
-@property (nonatomic, assign) double length;
+@property (nonatomic, assign) double motorCycleLength;
 
 - (instancetype)initWithTierDiameter:(double)tierDiameter
-                              length:(double) length
+                    motorCycleLength:(double) length
                   manufactureCompany:(NSString*)manufactureCompany
                      manufactureDate:(NSDate *)manufactureDate
                                model:(NSString *)model

@@ -10,7 +10,7 @@
 @implementation NMMotorCycle
 
 - (instancetype)initWithTierDiameter:(double)tierDiameter
-                              length:(double) length
+                    motorCycleLength:(double) length
                   manufactureCompany:(NSString*)manufactureCompany
                      manufactureDate:(NSDate *)manufactureDate
                                model:(NSString *)model
@@ -25,7 +25,7 @@
                                  plateNumber:plateNumber
                             bodySerialNumber:bodySerialNumber];
     if(self){
-        [self setLength:length] ;
+        [self setMotorCycleLength:length] ;
         [self setTierDiameter:tierDiameter];
     }
     return self;
@@ -42,7 +42,7 @@
     NSInteger bodySerialNumber = 1;
     
     return [self initWithTierDiameter:tierDiameter
-                               length:length
+                     motorCycleLength:length
                    manufactureCompany:manufactureCompany
                       manufactureDate:manufactureDate
                                 model:model
@@ -61,9 +61,8 @@
     
     double tierDiameter = 0.0;
     double length = 0.0;
-    
     return [self initWithTierDiameter:tierDiameter
-                               length:length
+                     motorCycleLength:length
                    manufactureCompany:manufactureCompany
                       manufactureDate:manufactureDate
                                 model:model
@@ -75,6 +74,6 @@
 }
 
 
-@synthesize tierDiameter, length;
+@synthesize tierDiameter, motorCycleLength;
 
 @end
