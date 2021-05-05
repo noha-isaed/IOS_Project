@@ -30,7 +30,7 @@
     NSString *manufacture = @"Tesla" ;
     NSDate *manufactureDate = nil;
     NSString *model = @"Tesla Model S";
-    NSInteger capacity = 0;
+    NSInteger capacity = 1;
     NSInteger cylinders = 0;
     
     return [self initWithManufacture:manufacture

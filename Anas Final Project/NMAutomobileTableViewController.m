@@ -57,7 +57,7 @@
                                                            model:@"323"
                                                            engine:[NMEngine new]
                                                               plateNumber:3322
-                                                         bodySerialNumber:45678932323];
+                                                         bodySerialNumber:45678323];
                       
 
     
@@ -94,7 +94,7 @@
     }
     else if([autoMobile[indexPath.row] isKindOfClass:[NMMotorCycle class]]){
         cell.detailTextLabel.text = @"MotorCycle";
-
+    
     }
     return  cell;
 
@@ -105,7 +105,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NMAotumobileDetailsViewController *autoMobileDetails = [segue destinationViewController];
+    AutomobileDetailsTableViewController *autoMobileDetails = [segue destinationViewController];
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     [autoMobileDetails setCurrentAutomobile:[autoMobile objectAtIndex:selectedIndexPath.row]];
 }

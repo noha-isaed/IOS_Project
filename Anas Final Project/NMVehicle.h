@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
                      manufactureDate:(NSDate *)manufactureDate
                                model:(NSString *)model
                               engine:(NMEngine *)engine
-                         plateNumber:(NSInteger)plateNumber
+                  plateNumber:(NSInteger)plateNumber
                     bodySerialNumber:(NSInteger)bodySerialNumber;
 
 
