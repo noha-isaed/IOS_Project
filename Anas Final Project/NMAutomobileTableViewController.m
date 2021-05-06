@@ -105,9 +105,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    AutomobileDetailsTableViewController *autoMobileDetails = [segue destinationViewController];
-    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-    [autoMobileDetails setCurrentAutomobile:[autoMobile objectAtIndex:selectedIndexPath.row]];
+    if ([sender isKindOfClass:UITableViewCell.class]) {
+        AutomobileDetailsTableViewController *autoMobileDetails = [segue destinationViewController];
+        NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+        [autoMobileDetails setCurrentAutomobile:[autoMobile objectAtIndex:selectedIndexPath.row]];
+    }
+    
 }
 
 /*

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AF281D1926315CAB0003CE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF281D1826315CAB0003CE40 /* Main.storyboard */; };
 		AF281D1F263165CA0003CE40 /* NMAutomobileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF281D1E263165CA0003CE40 /* NMAutomobileTableViewController.m */; };
-		AF281D2B26316FAB0003CE40 /* NMAotumobileDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF281D2A26316FAB0003CE40 /* NMAotumobileDetailsViewController.m */; };
 		AF3EADF1262AD3F90011D505 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EADF0262AD3F90011D505 /* AppDelegate.m */; };
 		AF3EADF4262AD3F90011D505 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EADF3262AD3F90011D505 /* SceneDelegate.m */; };
 		AF3EADFF262AD4090011D505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3EADFD262AD4090011D505 /* LaunchScreen.storyboard */; };
@@ -22,8 +21,8 @@
 		AF3EAE56262AE2530011D505 /* NMCar.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE51262AE2530011D505 /* NMCar.m */; };
 		AF3EAE5F262AE2A60011D505 /* NMVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE5E262AE2A60011D505 /* NMVehicle.m */; };
 		AF3EAE65262AE3DD0011D505 /* NMTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAE64262AE3DD0011D505 /* NMTruck.m */; };
-		AFA0608526341BF200B7E239 /* AutomobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA0608426341BF200B7E239 /* AutomobileViewController.m */; };
 		AFB03077263AAD080028AB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB03076263AAD080028AB34 /* Assets.xcassets */; };
+		AFB585482643C33D00D15DED /* AddAutomobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB585472643C33D00D15DED /* AddAutomobileViewController.m */; };
 		AFB8A447264271F5006CA822 /* AutomobileDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB8A446264271F5006CA822 /* AutomobileDetailsTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +47,6 @@
 		AF281D1826315CAB0003CE40 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AF281D1D263165CA0003CE40 /* NMAutomobileTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAutomobileTableViewController.h; sourceTree = "<group>"; };
 		AF281D1E263165CA0003CE40 /* NMAutomobileTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAutomobileTableViewController.m; sourceTree = "<group>"; };
-		AF281D2926316FAB0003CE40 /* NMAotumobileDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAotumobileDetailsViewController.h; sourceTree = "<group>"; };
-		AF281D2A26316FAB0003CE40 /* NMAotumobileDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAotumobileDetailsViewController.m; sourceTree = "<group>"; };
 		AF3EADEC262AD3F80011D505 /* Anas Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anas Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3EADEF262AD3F90011D505 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF3EADF0262AD3F90011D505 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,9 +75,9 @@
 		AF3EAE5E262AE2A60011D505 /* NMVehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMVehicle.m; sourceTree = "<group>"; };
 		AF3EAE63262AE3DD0011D505 /* NMTruck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMTruck.h; sourceTree = "<group>"; };
 		AF3EAE64262AE3DD0011D505 /* NMTruck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMTruck.m; sourceTree = "<group>"; };
-		AFA0608326341BF200B7E239 /* AutomobileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutomobileViewController.h; sourceTree = "<group>"; };
-		AFA0608426341BF200B7E239 /* AutomobileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomobileViewController.m; sourceTree = "<group>"; };
 		AFB03076263AAD080028AB34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Calculater/Calculater/Assets.xcassets; sourceTree = "<group>"; };
+		AFB585462643C33D00D15DED /* AddAutomobileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddAutomobileViewController.h; sourceTree = "<group>"; };
+		AFB585472643C33D00D15DED /* AddAutomobileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddAutomobileViewController.m; sourceTree = "<group>"; };
 		AFB8A445264271F5006CA822 /* AutomobileDetailsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutomobileDetailsTableViewController.h; sourceTree = "<group>"; };
 		AFB8A446264271F5006CA822 /* AutomobileDetailsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomobileDetailsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,14 +153,12 @@
 				AF3EAE63262AE3DD0011D505 /* NMTruck.h */,
 				AF3EAE64262AE3DD0011D505 /* NMTruck.m */,
 				AF281D1826315CAB0003CE40 /* Main.storyboard */,
-				AFA0608326341BF200B7E239 /* AutomobileViewController.h */,
-				AFA0608426341BF200B7E239 /* AutomobileViewController.m */,
-				AF281D2926316FAB0003CE40 /* NMAotumobileDetailsViewController.h */,
-				AF281D2A26316FAB0003CE40 /* NMAotumobileDetailsViewController.m */,
 				AF281D1D263165CA0003CE40 /* NMAutomobileTableViewController.h */,
 				AF281D1E263165CA0003CE40 /* NMAutomobileTableViewController.m */,
 				AFB8A445264271F5006CA822 /* AutomobileDetailsTableViewController.h */,
 				AFB8A446264271F5006CA822 /* AutomobileDetailsTableViewController.m */,
+				AFB585462643C33D00D15DED /* AddAutomobileViewController.h */,
+				AFB585472643C33D00D15DED /* AddAutomobileViewController.m */,
 			);
 			path = "Anas Final Project";
 			sourceTree = "<group>";
@@ -320,11 +315,10 @@
 				AF3EAE02262AD4090011D505 /* main.m in Sources */,
 				AFB8A447264271F5006CA822 /* AutomobileDetailsTableViewController.m in Sources */,
 				AF3EAE56262AE2530011D505 /* NMCar.m in Sources */,
-				AFA0608526341BF200B7E239 /* AutomobileViewController.m in Sources */,
+				AFB585482643C33D00D15DED /* AddAutomobileViewController.m in Sources */,
 				AF3EAE54262AE2530011D505 /* NMMotorCycle.m in Sources */,
 				AF3EAE65262AE3DD0011D505 /* NMTruck.m in Sources */,
 				AF3EAE55262AE2530011D505 /* NMAutomobile.m in Sources */,
-				AF281D2B26316FAB0003CE40 /* NMAotumobileDetailsViewController.m in Sources */,
 				AF3EADF4262AD3F90011D505 /* SceneDelegate.m in Sources */,
 				AF3EAE53262AE2530011D505 /* NMEngine.m in Sources */,
 				AF281D1F263165CA0003CE40 /* NMAutomobileTableViewController.m in Sources */,

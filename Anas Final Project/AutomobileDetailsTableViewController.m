@@ -148,7 +148,6 @@ NSMutableArray *labels;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%d", data.count);
     return data.count;
 }
 
