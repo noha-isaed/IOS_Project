@@ -32,13 +32,6 @@
     // Do any additional setup after loading the view.
     typeOfAutoMobile = [NSMutableArray arrayWithObjects:@"Car", @"Truck", @"MotorCycle", nil];
     
-    [data addObject: self.automobileLengthTextField.text];
-    [data addObject: self.manufactureCompanyTextField.text];
-    [data addObject: self.modelTextField.text];
-    [data addObject: self.engineCapacityTextField.text];
-    [data addObject: self.plateNumberTextField.text];
-    [data addObject: self.bodeySerialNumberTextField.text];
-    [data addObject: self.manufactureDateTextField.text];
     
     automobileType.delegate = self;
     automobileType.dataSource = self;
@@ -65,13 +58,30 @@
     [self.automobileTypeTextField setText: [typeOfAutoMobile objectAtIndex:row]];
 }
 
-/*
+
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 //     Get the new view controller using [segue destinationViewController].
 //     Pass the selected object to the new view controller.
+    
+    [data addObject: self.automobileLengthTextField.text];
+    [data addObject: self.manufactureCompanyTextField.text];
+    [data addObject: self.modelTextField.text];
+    [data addObject: self.engineCapacityTextField.text];
+    [data addObject: self.plateNumberTextField.text];
+    [data addObject: self.bodeySerialNumberTextField.text];
+    [data addObject: self.manufactureDateTextField.text];
+    [data addObject: self.automobileTypeTextField.text];
+    
 }
-*/
 
 
+
+- (IBAction)dismissButtonAction:(UIButton *)sender {
+    
+  [self dismissViewControllerAnimated:YES
+                           completion:nil];
+    
+}
 @end

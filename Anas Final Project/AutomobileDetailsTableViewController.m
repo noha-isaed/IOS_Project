@@ -158,7 +158,8 @@ NSMutableArray *labels;
 ////    if(count<[data count]){
 //    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
 //    NSLog(@"%d", selectedIndexPath.row);
-    if([[data objectAtIndex:indexPath.row] isKindOfClass:[NSNumber class]]){
+    if( [[data objectAtIndex:indexPath.row] isKindOfClass:[NSNumber class]] )
+    {
         NSInteger intValue = [[data objectAtIndex:indexPath.row] integerValue];
         NSString *strValue = [NSString stringWithFormat: @"%d", intValue];
         cell.detailTextLabel.text = strValue;
